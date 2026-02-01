@@ -131,8 +131,24 @@
 </head>
 
 <body>
+    
+<script>
+    for (let i = 0; i < 25; i++) {
+        let h = document.createElement("div");
+        h.className = "heart";
+        h.style.left = Math.random() * 100 + "vw";
+        h.style.animationDelay = Math.random() * 4 + "s";
+        h.style.transform = "scale(" + (Math.random() * 1.5) + ")";
+        document.body.appendChild(h);
+    }
+</script>
 
-    <!-- Play Button at TOP -->
+<div class="section">
+    <div class="title">For My Sriyuuu 💗</div>
+    <div class="subtitle">A small piece of my heart… made for you.</div>
+</div>
+
+<!-- Play Button at TOP -->
 <div style="text-align:center; margin-top:20px;">
     <button id="playMusic" 
         style="background:#ff6daa; color:white; padding:15px 30px; 
@@ -155,22 +171,6 @@
     });
 </script>
     
-<script>
-    for (let i = 0; i < 25; i++) {
-        let h = document.createElement("div");
-        h.className = "heart";
-        h.style.left = Math.random() * 100 + "vw";
-        h.style.animationDelay = Math.random() * 4 + "s";
-        h.style.transform = "scale(" + (Math.random() * 1.5) + ")";
-        document.body.appendChild(h);
-    }
-</script>
-
-<div class="section">
-    <div class="title">For My Sriyuuu 💗</div>
-    <div class="subtitle">A small piece of my heart… made for you.</div>
-</div>
-
 <div class="photo-box">
     <img src="atul.png">
 </div>
@@ -246,15 +246,6 @@
 <div class="msg">
     No special day. No reason. Just me appreciating you.
 </div>
-
-<div style="text-align:center; margin-top:30px;">
-    <button id="playMusic" 
-        style="background:#ff6daa; color:white; padding:15px 30px; 
-        border:none; border-radius:30px; font-size:18px; 
-        font-weight:600; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-        🔊 Play Music
-    </button>
-</div> 
 
 </body>
 </html>
