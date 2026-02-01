@@ -224,10 +224,18 @@
     No special day. No reason. Just me appreciating you.
 </div>
 
-<iframe src="itnisi.mp3" allow="autoplay" style="display:none"></iframe>
-<audio autoplay loop>
+<audio id="bgm" loop>
   <source src="itnisi.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+document.addEventListener("click", function () {
+    const audio = document.getElementById("bgm");
+    if (audio.paused) {
+        audio.play();
+    }
+}, { once: true });
+</script>
 
 </body>
 </html>
