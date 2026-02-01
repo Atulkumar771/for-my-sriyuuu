@@ -1,2 +1,231 @@
 <!DOCTYPE html>
-<html><body><h1>Atul ❤️ Sriyuu Website</h1></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Sriyuuu 💗</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffe6f2;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .heart {
+            position: fixed;
+            width: 15px;
+            height: 15px;
+            background: #ff6daa;
+            transform: rotate(45deg);
+            animation: heartFloat 6s linear infinite;
+            opacity: 0.6;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: #ff6daa;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before { top: -8px; left: 0; }
+        .heart:after { left: -8px; top: 0; }
+
+        @keyframes heartFloat {
+            0% { transform: translateY(100vh) rotate(45deg); opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(45deg); opacity: 0; }
+        }
+
+        .section {
+            padding: 80px 25px;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .title {
+            font-size: 2.7em;
+            font-weight: 700;
+            color: #d93682;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #b12463;
+            margin-top: -10px;
+        }
+
+        .photo-box {
+            width: 90%;
+            max-width: 400px;
+            margin: 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .photo-box img { width: 100%; display: block; }
+
+        .msg {
+            background: #ffd0e6;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 12px;
+            font-size: 1.2em;
+            color: #b91562;
+            max-width: 500px;
+            line-height: 1.5em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* TIMELINE EVENTS */
+        .events-box {
+            background: #ffd7ec;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 40px 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .event-title {
+            color: #d52e7b;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .event-text {
+            color: #902356;
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            background: #ffe9f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .end {
+            font-size: 2em;
+            color: #c3136b;
+            font-weight: 700;
+            padding: 50px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<script>
+    for (let i = 0; i < 25; i++) {
+        let h = document.createElement("div");
+        h.className = "heart";
+        h.style.left = Math.random() * 100 + "vw";
+        h.style.animationDelay = Math.random() * 4 + "s";
+        h.style.transform = "scale(" + (Math.random() * 1.5) + ")";
+        document.body.appendChild(h);
+    }
+</script>
+
+<div class="section">
+    <div class="title">For My Sriyuuu 💗</div>
+    <div class="subtitle">A small piece of my heart… made for you.</div>
+</div>
+
+<div class="photo-box">
+    <img src="PHOTO1.jpg">
+</div>
+
+<div class="msg">
+    Every moment with you feels warm, calm and special.
+</div>
+
+<!-- ❤️ EVENTS SECTION -->
+<div class="events-box">
+    <div class="event-title">Our Special Moments 💗</div>
+
+    <div class="event-text">
+        <strong>23 November 2025</strong><br><br>
+        Our first meet was in a family trip while going Ghatagan.  
+        When I saw you, my heart just beat faster — it was love at first sight.  
+        I wanted to talk with you, walk with you… you felt like home.  
+        It never seemed like we were strangers. Our vibes were just awesome.
+    </div>
+
+    <div class="event-text">
+        <strong>24 November 2025</strong><br><br>
+        I had given you my Instagram ID where I could send you photos —  
+        but deep down it was just a chance to talk with you, to know you better.  
+        My mom had disagreed to give you my number or ID,  
+        but in the end you noted it and texted me…  
+        and I’m so glad you did.  
+        From that moment, you became my only favorite special person.
+    </div>
+
+    <div class="event-text">
+        <strong>27 December 2025</strong><br><br>
+        I proposed you… it was a scary moment for me.  
+        I had never proposed anyone in my entire life —  
+        and I am so glad that my first time was with you.  
+        You accepted it, and I knew you needed time.  
+        I understood it, and I’m always standing behind you.  
+        Come to me whenever you want…  
+        I’ll never judge you.  
+        My heart is only for you.  
+        I’m all yours 💗
+    </div>
+</div>
+
+<div class="photo-box">
+    <img src="PHOTO2.jpg">
+</div>
+
+<div class="msg">
+    You are the prettiest part of my day.
+</div>
+
+<div class="photo-box">
+    <img src="PHOTO3.jpg">
+</div>
+
+<div class="msg">
+    I’m lucky… because your name is the reason.
+</div>
+
+<div class="photo-box">
+    <img src="PHOTO4.jpg">
+</div>
+
+<div class="msg">
+    No special day.  
+    No reason.  
+    Just me appreciating you.
+</div>
+
+<div class="end">
+    I made this for you, Sriyuuu 💗<br>
+    Because you matter.
+</div>
+
+<audio autoplay loop hidden>
+    <source src="YOUR_MUSIC_LINK_HERE">
+</audio>
+
+</body>
+</html>
